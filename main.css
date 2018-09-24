@@ -70,10 +70,11 @@ body {
 #cloud{
     position: relative;
     top: 35px;
+	padding: 100px;
 }
 
 #tooltip {
-    position: absolute;
+    position: relative;
     left: 1500px;
     top: 300px;
     width: 200px;
