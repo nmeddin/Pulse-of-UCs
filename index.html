@@ -14,48 +14,45 @@
             Ever wonder what the people around you wanted to say, but didn't because they feared judgement?
 
         </p>
-        <p>Yik-Yak, an anonymous social media app, allows users to post and view "Yaks" within a 10-mile radius.  We analyzed the top words that UC students yakked over the past week (11/27-12/3) <br>
-        Perhaps to nobody's surprise, when veiled by anonymity, UC students collectively scream into the void about their vices, and how lonely, horny, and anxious they are.</p>
+        <p>Yik-Yak, a short lived social media app, allowed users to anonymously post and view "Yaks" within a 10-mile radius.  We analyzed the top words that UC students yakked over the 2016 winter quarter finals week.
   </head>
-  <body>
-  <div class = "container">
-		<div class="half compressible" id="tooltip" class="hidden">
-			<p><strong>Day of the Week: <span id="value">Sun</span></strong></p>
-			<p><strong>School:<span id="schoolID"> UCB </span></strong></p>
-		</div>  
+  <body style="background-color:whitesmoke">
+    <div class = "container" style="background-color: aliceblue">
+  
 	
-		<div class = half compressible">
-			<div class="slider"></div>
-		</div>
-		  
-		<div id="cloud"></div>  
-		<div id="UCs" style="text-align:center;">
-            
-		<svg width="900" height="100">
-			
-			<image xlink:href="logos/UCB.png" x="0" y="20" height="75px" width="75px"/>
-			 <circle id="circle1" cx="36" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('1')"/>
-			<image xlink:href="logos/UCI.png" x="100" y="20" height="75px" width="75px"/>
-			 <circle id="circle2" cx="136" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('2')"/>
-			<image xlink:href="logos/UCD.png" x="200" y="20" height="75px" width="75px"/>
-			 <circle id="circle3" cx="236" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('3')"/>
-			<image xlink:href="logos/UCLA.png" x="300" y="20" height="75px" width="75px"/>
-			 <circle id="circle4" cx="336" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('4')"/>
-			<image xlink:href="logos/UCM.png" x="400" y="20" height="75px" width="75px"/>
-			 <circle id="circle5" cx="436" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('5')"/>
-			<image xlink:href="logos/UCR.png" x="500" y="20" height="75px" width="75px" />
-			 <circle id="circle6" cx="536" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('6')"/>
-			<image xlink:href="logos/UCSB.png" x="600" y="20" height="75px" width="75px"/>
-			 <circle id="circle7" cx="636" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('7')"/>
-			<image xlink:href="logos/UCSC.png" x="700" y="20" height="75px" width="75px"/>
-			 <circle id="circle8" cx="736" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('8')"/>
-			<image xlink:href="logos/UCSD.png" x="800" y="20" height="75px" width="75px"/>
-			 <circle id="circle9" cx="836" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('9')" />
-        
-		</svg>
+		<div id="cloud"></div>
+        <div class = "container padded center">
+            <div class ="half">
+            <div id="UCs" style="text-align:center; background-color: white">
 
-		</div>
-	</div>
+            <svg width="900" height="100">
+
+                <image xlink:href="logos/UCB.png" x="0" y="20" height="75px" width="75px"/>
+                 <circle id="circle1" cx="36" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('1')"/>
+                <image xlink:href="logos/UCI.png" x="100" y="20" height="75px" width="75px"/>
+                 <circle id="circle2" cx="136" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('2')"/>
+                <image xlink:href="logos/UCD.png" x="200" y="20" height="75px" width="75px"/>
+                 <circle id="circle3" cx="236" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('3')"/>
+                <image xlink:href="logos/UCLA.png" x="300" y="20" height="75px" width="75px"/>
+                 <circle id="circle4" cx="336" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('4')"/>
+                <image xlink:href="logos/UCM.png" x="400" y="20" height="75px" width="75px"/>
+                 <circle id="circle5" cx="436" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('5')"/>
+                <image xlink:href="logos/UCR.png" x="500" y="20" height="75px" width="75px" />
+                 <circle id="circle6" cx="536" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('6')"/>
+                <image xlink:href="logos/UCSB.png" x="600" y="20" height="75px" width="75px"/>
+                 <circle id="circle7" cx="636" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('7')"/>
+                <image xlink:href="logos/UCSC.png" x="700" y="20" height="75px" width="75px"/>
+                 <circle id="circle8" cx="736" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('8')"/>
+                <image xlink:href="logos/UCSD.png" x="800" y="20" height="75px" width="75px"/>
+                 <circle id="circle9" cx="836" cy="55" r="35" fill="purple" opacity="0" onmouseover="updateData('9')" />
+
+            </svg>
+
+            </div>
+                
+        </div>
+      </div>
+    </div>
 
     <script type="text/javascript" src="main.js"></script>
 
@@ -63,6 +60,7 @@
 loadData("CSVs/1_0.csv");
 
   </script>
+
 <h2>CMPS 165 Fall 2016</h2>
 <ul>
     <li>Nicholas Meddin and Matthew Cruz</li>
